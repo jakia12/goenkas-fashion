@@ -5,7 +5,9 @@ import MainNav from '../mainNav/MainNav'
 const Header = () => {
     return (
         <>
-            <TopNav />
+            <div className="hidden md:block">
+                <TopNav />
+            </div>
             <MainNav />
         </>
     )

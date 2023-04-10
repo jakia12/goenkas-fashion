@@ -42,7 +42,7 @@ const SearchBar = () => {
                 onClick={handleSearchOpen}
             ><BiSearch /></span>
 
-            <div className="absolute z-10 right-[40px] top-[-2px] w-[400px] bg-white shadow-lg shadow-gray-300 p-3 rounded-lg"
+            <div className="absolute z-10 right-[5px] md:right-[40px] top-[40px] md:top-[-2px] min-w-[300px] md:w-[400px] bg-white shadow-lg shadow-gray-300 p-3 rounded-lg"
                 style={{ display: isOpen === true ? "block" : "none" }}
             >
 

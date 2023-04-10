@@ -62,13 +62,15 @@ const BannerSlider = () => {
                             }}>
                                 <div className="content_wraper text-center px-5">
                                     <div className="flex justify-center">
-                                        <h1 className='lg:text-6xl text-4xl font-medium text-white  uppercase  pb-4 ' >{slider.title}</h1>
+                                        <h1 className='lg:text-5xl text-3xl font-medium text-white  uppercase  pb-4 ' >{slider.title}</h1>
+                                    </div>
+                                    <div className="flex justify-center">
+                                        <p className="text-white lg:max-w-3xl max-w-xl text-center">{slider.subTitle}</p>
                                     </div>
 
-                                    <p className="text-white lg:max-w-3xl max-w-xl">{slider.subTitle}</p>
-                                    <div className="pt-6">
-
-                                        <button className=" text-white py-3 px-6   rounded-lg text-lg  bg-firstCol hover:bg-secondCol" >
+                                    <div className="pt-6 flex items-center justify-center gap-4">
+                                        <span className="text-white py-1.5 px-6 border-2 border-[#111] rounded bg-[#111]">${slider.startPrice}</span>
+                                        <button className=" text-white py-1.5 px-6  hover: rounded text-base  bg-lightOrange hover:bg-secondCol border-2 border-lightOrange hover:border-[#fff] hover:text-[#fff] hover:bg-transparent " >
                                             Shop Now
                                         </button>
 

@@ -5,7 +5,7 @@ import SocialIcon from '../shared/socialIcon/SocialIcon';
 
 const TopNav = () => {
     return (
-        <div className='flex items-center justify-between bg-darkSlate py-2.5'>
+        <div className='flex items-center justify-between bg-darkSlate py-2.5 px-10'>
 
             {/* left top nav info */}
 

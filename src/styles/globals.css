@@ -157,10 +157,158 @@ img.w-full.about_img.rounded {
 }
 
 /*********slick slider********/
-.slick-slide>div {
-  padding: 0 13px;
+
+/* .slick-slide>div {
+  padding: 0 13px !important
+} */
+
+/* 
+.slick-slide>div:nth-child(2) {
+  padding: 0 13px !important;
 }
+
+
+.slick-slide>div:nth-child(3) {
+  padding: 0 13px !important;
+} */
 
 .slick-list {
   padding: 0 -10px;
+}
+
+
+/* responsive menu */
+/*=======================================
+==================hamburger button
+=======================================*/
+
+.responsive_menu {
+  margin-left: auto;
+
+}
+
+button.hamburger_icon {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  padding: 0.2rem;
+  cursor: pointer;
+  color: #000;
+  position: absolute;
+  top: 14px;
+  right: 43px;
+  display: none;
+
+
+}
+
+.side_nav {
+  background: #000 !important;
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  left: -100%;
+  z-index: 9999;
+  top: 0;
+  padding: 4.9rem 0;
+  overflow-x: hidden;
+  text-align: center;
+  transition: 0.7s;
+}
+
+.side_nav.active {
+  left: 0;
+}
+
+
+ul.mobile_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.mobile_menu li {
+  padding: 1rem 1rem;
+  transition: all 0.3s;
+  width: 100%;
+  font-size: 14px;
+}
+
+.mobile_menu li a {
+  transition: all 0.3s;
+}
+
+.mobile_menu li a:hover,
+
+.mobile_menu li a:active {
+  color: #E64E08 !important
+}
+
+
+.mobile_item {
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #989898;
+  font-weight: 400;
+  line-height: 1.6rem;
+  transition: 0.3s;
+}
+
+.mobile_menu li:hover .mobile_item,
+.mobile_menu li:focus .mobile_item {
+  color: #f1f1f1;
+}
+
+
+button.close_btn {
+  position: absolute;
+  right: 29px;
+  top: 10px;
+  background: none;
+  outline: none;
+  border: none;
+  color: #989898;
+  font-size: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close_btn:hover {
+  color: #f1f1f1;
+}
+
+.hide_nav {
+  visibility: hidden;
+}
+
+/*******responsive design*******/
+
+@media screen and (max-width:900px) {
+
+
+  .mani_menu {
+    display: none;
+    visibility: hidden;
+  }
+
+  button.hamburger_icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width:576px) {
+
+
+  /*****mobile menu******/
+  .side_nav {
+
+    width: 60%;
+  }
+
+  button.hamburger_icon {
+    top: 8px
+  }
 }

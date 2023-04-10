@@ -6,6 +6,8 @@ import CategorySlider from '@/components/categorySlider/CategorySlider'
 import FeaturedProduct from '@/components/featuredProduct/FeaturedProduct'
 import CustomersReview from '@/components/customersReview/CustomersReview'
 import MansCategorySlider from '@/components/mansCategorySlider/MansCategorySlider'
+import BrandLogo from '@/components/brandLogo/BrandLogo'
+import Head from 'next/head'
 
 
 
@@ -13,83 +15,98 @@ import MansCategorySlider from '@/components/mansCategorySlider/MansCategorySlid
 
 export default function Home() {
   return (
-    <Layout>
-      {/* banner slider */}
-      <BannerSlider />
-      {/* category section */}
-      <section className="py-10">
-        <div className="container mx-auto w-full lg:max-w-6xl">
-          {/* section title */}
-          <div className="py-5 text-center">
-            <h2 className="text-[1.8rem] font-medium text-[#191919] capitalize ">
-              Ladies Product Category
-            </h2>
-            <div className="h-[3px] w-[80px] bg-lightOrange mx-auto mt-2 mb-3"></div>
-            <p className="my-3 text-base text-gray-600">Find best quality products at Goenkas Fashion Stores</p>
-          </div>
-          <CategorySlider />
-
-        </div>
-      </section>
-
-      {/* featured product  */}
-      <section className="py-10">
-        <div className="container mx-auto w-full lg:max-w-6xl">
-          <div className="py-5 text-center">
-            <h2 className="text-[1.8rem] font-medium text-[#191919] capitalize ">
-              Featured Products
-            </h2>
-            <div className="h-[3px] w-[80px] bg-lightOrange mx-auto mt-2 mb-3"></div>
-            <p className="my-3 text-base text-gray-600">Find best quality products at Goenkas Fashion Stores</p>
-          </div>
-
-          {/* featured product card */}
-          <div className="my-6">
+    <>
+      <Head>
+        <title>Goenka's Fashions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Meta description for the Home page" />
+      </Head>
+      <Layout>
+        {/* banner slider */}
+        <BannerSlider />
+        {/* category section */}
+        <section className="py-10">
+          <div className="container mx-auto w-full lg:max-w-6xl">
+            {/* section title */}
+            <div className="py-5 text-center">
+              <h2 className="text-[1.8rem] font-medium text-[#191919] capitalize ">
+                Ladies Product Category
+              </h2>
+              <div className="h-[3px] w-[80px] bg-lightOrange mx-auto mt-2 mb-3"></div>
+              <p className="my-3 text-base text-gray-600">Find best quality products at Goenkas Fashion Stores</p>
+            </div>
+            <CategorySlider />
 
           </div>
-          <FeaturedProduct />
+        </section>
 
-        </div>
+        {/* featured product  */}
+        <section className="py-10 bg-[#f7f7f7]">
+          <div className="container mx-auto w-full lg:max-w-6xl">
+            <div className="py-5 text-center">
+              <h2 className="text-[1.8rem] font-medium text-[#191919] capitalize ">
+                Featured Products
+              </h2>
+              <div className="h-[3px] w-[80px] bg-lightOrange mx-auto mt-2 mb-3"></div>
+              <p className="my-3 text-base text-gray-600">Find best quality products at Goenkas Fashion Stores</p>
+            </div>
 
+            {/* featured product card */}
+            <div className="my-6">
 
-      </section>
+            </div>
+            <FeaturedProduct />
 
-      {/* mans category */}
-      <section className="py-10">
-        <div className="container mx-auto w-full lg:max-w-6xl">
-          <div className="py-5 text-center">
-            <h2 className="text-[1.8rem] font-medium text-[#191919] capitalize ">
-              Featured Products
-            </h2>
-            <div className="h-[3px] w-[80px] bg-lightOrange mx-auto mt-2 mb-3"></div>
-            <p className="my-3 text-base text-gray-600">Find best quality products at Goenkas Fashion Stores</p>
           </div>
 
-          {/* mans category slider */}
-          <MansCategorySlider />
-        </div>
-      </section>
 
-      {/* customers review */}
-      <section className="pt-10 pb-24 bg-[#f7f7f7]">
-        <div className="container mx-auto w-full lg:max-w-6xl">
-          <div className="py-5 text-center">
-            <h2 className="text-[1.8rem] font-medium text-[#191919] capitalize ">
-              Customers Review
-            </h2>
-            <div className="h-[3px] w-[80px] bg-lightOrange mx-auto mt-2 mb-3"></div>
-            <p className="my-3 text-base text-gray-600">Find best quality products at Goenkas Fashion Stores</p>
+        </section>
+
+        {/* mans category */}
+        <section className="py-10">
+          <div className="container mx-auto w-full lg:max-w-6xl">
+            <div className="py-5 text-center">
+              <h2 className="text-[1.8rem] font-medium text-[#191919] capitalize ">
+                Man's Categories
+              </h2>
+              <div className="h-[3px] w-[80px] bg-lightOrange mx-auto mt-2 mb-3"></div>
+              <p className="my-3 text-base text-gray-600">Find best quality products at Goenkas Fashion Stores</p>
+            </div>
+
+            {/* mans category slider */}
+            <MansCategorySlider />
           </div>
+        </section>
 
-          {/* review slider */}
-          <CustomersReview />
+        {/* customers review */}
+        <section className="pt-10 pb-24 bg-[#f7f7f7]">
+          <div className="container mx-auto w-full lg:max-w-6xl">
+            <div className="py-5 text-center">
+              <h2 className="text-[1.8rem] font-medium text-[#191919] capitalize ">
+                Customers Review
+              </h2>
+              <div className="h-[3px] w-[80px] bg-lightOrange mx-auto mt-2 mb-3"></div>
+              <p className="my-3 text-base text-gray-600">Find best quality products at Goenkas Fashion Stores</p>
+            </div>
+
+            {/* review slider */}
+            <CustomersReview />
 
 
 
-        </div>
-      </section>
+          </div>
+        </section>
 
-    </Layout >
+        {/* brands logo */}
+        <section className="py-10">
+          <div className="container mx-auto w-full md:max-w-6xl">
+            <BrandLogo />
+          </div>
+        </section>
+
+      </Layout >
+    </>
+
   )
 
 }
