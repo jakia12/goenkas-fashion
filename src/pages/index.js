@@ -8,6 +8,7 @@ import CustomersReview from '@/components/customersReview/CustomersReview'
 import MansCategorySlider from '@/components/mansCategorySlider/MansCategorySlider'
 import BrandLogo from '@/components/brandLogo/BrandLogo'
 import Head from 'next/head'
+import AwardSlider from '@/components/awardSlider/AwardSlider'
 
 
 
@@ -26,7 +27,7 @@ export default function Home() {
         <BannerSlider />
         {/* category section */}
         <section className="py-10">
-          <div className="container mx-auto w-full lg:max-w-6xl">
+          <div className="container mx-auto w-full lg:max-w-6xl px-4 md:px-0">
             {/* section title */}
             <div className="py-5 text-center">
               <h2 className="text-[1.8rem] font-medium text-[#191919] capitalize ">
@@ -42,7 +43,7 @@ export default function Home() {
 
         {/* featured product  */}
         <section className="py-10 bg-[#f7f7f7]">
-          <div className="container mx-auto w-full lg:max-w-6xl">
+          <div className="container mx-auto w-full lg:max-w-6xl px-4 md:px-0" >
             <div className="py-5 text-center">
               <h2 className="text-[1.8rem] font-medium text-[#191919] capitalize ">
                 Featured Products
@@ -64,7 +65,7 @@ export default function Home() {
 
         {/* mans category */}
         <section className="py-10">
-          <div className="container mx-auto w-full lg:max-w-6xl">
+          <div className="container mx-auto w-full lg:max-w-6xl px-4 md:px-0">
             <div className="py-5 text-center">
               <h2 className="text-[1.8rem] font-medium text-[#191919] capitalize ">
                 Man's Categories
@@ -80,7 +81,7 @@ export default function Home() {
 
         {/* customers review */}
         <section className="pt-10 pb-24 bg-[#f7f7f7]">
-          <div className="container mx-auto w-full lg:max-w-6xl">
+          <div className="container mx-auto w-full lg:max-w-6xl px-4 md:px-0">
             <div className="py-5 text-center">
               <h2 className="text-[1.8rem] font-medium text-[#191919] capitalize ">
                 Customers Review
@@ -99,10 +100,13 @@ export default function Home() {
 
         {/* brands logo */}
         <section className="py-10">
-          <div className="container mx-auto w-full md:max-w-6xl">
+          <div className="container mx-auto w-full md:max-w-6xl px-4 md:px-0">
             <BrandLogo />
           </div>
         </section>
+
+        {/* award prize section */}
+        <AwardSlider />
 
       </Layout >
     </>

@@ -52,7 +52,7 @@ const FeaturedProduct = () => {
                     <div className="w-full sm:w-6/12 md:w-3/12">
                         <div className="m-3 border border-gray-200 rounded prod_card ">
                             <div className="relative overflow-hidden">
-                                <Image src={prod.productImg} />
+                                <Image src={prod.productImg} className='w-full' />
                                 {/* button group */}
                                 <div className="absolute top-4 left-4 ">
                                     {prod.isHotDeal === true && <button className="py-1 px-3 bg-lightOrange text-sm text-white rounded-sm block">

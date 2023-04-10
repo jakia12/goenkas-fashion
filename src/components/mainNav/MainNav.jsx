@@ -8,6 +8,11 @@ import { AiFillCloseCircle } from 'react-icons/ai';
 import { FaBullseye } from 'react-icons/fa';
 
 const MainNav = () => {
+
+    //sticky nav
+    const [stickyNav, setStickyNav] = useState(false);
+
+
     //mobile menu
     const [open, setOpen] = useState(false);
 
@@ -64,11 +69,24 @@ const MainNav = () => {
         //return wrapper.current;
 
     }, [open]);
+
+
+
+    //sticky nav on scroll
+
+    useEffect(() => {
+        window.onscroll = () => {
+            setStickyNav(window.pageYOffset === 0 ? false : true);
+            return () => (window.onscroll = null);
+        };
+    }, []);
+
     return (
-        <div className="flex items-center justify-around pt-4 px-2 md:px-0 md:py-5 border-b ">
+
+        <div className={` flex items-center justify-around pt-4 px-2 md:px-0 md:py-5 border-b  w-full top-0  z-[10] py-4 text-[#FFF] ${stickyNav ? 'bg-teal-400 fixed' : ''} }`}>
             {/* brand logo */}
             <span className="text-2xl">
-                <a href=""><Image src={brandLogo} /></a>
+                <a href="/"><Image src={brandLogo} /></a>
             </span>
 
             {/* main menu */}
@@ -114,7 +132,7 @@ const MainNav = () => {
 
                     <span
                         onClick={handleToggle}
-                        className='text-[#111] text-2xl '
+                        className='text-[#111] text-2xl cursor-pointer'
 
                     ><GiHamburgerMenu /></span>
                     <div

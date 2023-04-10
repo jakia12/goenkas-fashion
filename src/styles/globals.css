@@ -12,6 +12,12 @@ body {
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden !important;
+}
+
+
 ul {
   margin: 0;
   padding: 0
@@ -42,6 +48,21 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 550px;
+}
+
+/*****award slider****/
+.asl_h {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 490px;
+}
+
+.aslider_content {
+  min-height: 490px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -296,6 +317,20 @@ button.close_btn {
 
   button.hamburger_icon {
     display: block;
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  .slick-next,
+  .slick-prev {
+    display: none;
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+
+    display: none;
   }
 }
 

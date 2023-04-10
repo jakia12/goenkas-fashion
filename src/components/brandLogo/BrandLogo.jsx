@@ -9,16 +9,16 @@ const BrandLogo = () => {
     return (
         <div className="flex items-center justify-center gap-4 md:flex-nowrap flex-wrap">
             <div className="w-full sm:w-6/12 md:w-3/12">
-                <Image src={logo1} className='w-full' />
+                <Image src={logo1} className='w-full  mb-3 md:mb-0' />
             </div>
             <div className="w-full sm:w-6/12 md:w-3/12">
-                <Image src={logo2} className='w-full' />
+                <Image src={logo2} className='w-full mb-3 md:mb-0 ' />
             </div>
             <div className="w-full sm:w-6/12 md:w-3/12">
-                <Image src={logo3} className='w-full' />
+                <Image src={logo3} className='w-full  mb-3 md:mb-0' />
             </div>
             <div className="w-full sm:w-6/12 md:w-3/12">
-                <Image src={logo4} className='w-full' />
+                <Image src={logo4} className='w-full  mb-3 md:mb-0' />
             </div>
 
         </div>

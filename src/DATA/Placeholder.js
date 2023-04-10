@@ -21,6 +21,10 @@ import blouse from '../images/featured-products/pr6.png';
 import silkyTop from '../images/featured-products/pr7.png';
 
 
+//garment award image
+import award1 from '../images/award/aw1.png';
+import award2 from '../images/award/aw2.png';
+
 export const bannerSliders = [
     {
         id: 1,
@@ -153,6 +157,24 @@ export const featuredCategories = [
         isSale: false,
         rating: 4,
         price: 87
+    },
+
+]
+
+//awardSlider js
+
+export const awardSliders = [
+    {
+        id: 1,
+        title: "14 Garment Fair",
+        subTitle: "2022-2023",
+        awardImg: award1
+    },
+    {
+        id: 2,
+        title: " Garment Fair",
+        subTitle: "2022-2023",
+        awardImg: award2
     },
 
 ]
