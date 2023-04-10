@@ -1,5 +1,7 @@
 import { bannerSliders } from '@/DATA/Placeholder';
 import React from 'react'
+import Slider from 'react-slick';
+import slider1 from '../../images/slider1.jpg';
 
 const BannerSlider = () => {
 
@@ -53,7 +55,7 @@ const BannerSlider = () => {
                         <div className='slider_wrapper' >
 
                             <div className="slider_content sl-h" style={{
-                                background: `linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(${slider.backImg})`,
+                                background: `linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(${slider.backImg.src})`,
                                 backgroundPosition: 'center center',
                                 backgroundSize: 'cover',
                                 backgroundRepeat: 'no-repeat'
@@ -65,11 +67,11 @@ const BannerSlider = () => {
 
                                     <p className="text-white lg:max-w-3xl max-w-xl">{slider.subTitle}</p>
                                     <div className="pt-6">
-                                        <Link to="/shop">
-                                            <button className=" text-white py-3 px-6   rounded-lg text-lg  bg-firstCol hover:bg-secondCol" >
-                                                Shop Now
-                                            </button>
-                                        </Link>
+
+                                        <button className=" text-white py-3 px-6   rounded-lg text-lg  bg-firstCol hover:bg-secondCol" >
+                                            Shop Now
+                                        </button>
+
                                     </div>
                                 </div>
                             </div>

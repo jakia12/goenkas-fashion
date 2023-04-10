@@ -35,3 +35,132 @@ ul {
   visibility: visible;
   opacity: 1
 }
+
+/**********slider banner**********/
+.sl-h {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 550px;
+}
+
+
+.content_wrapper,
+.slider_content {
+  min-height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+img.w-full.about_img.rounded {
+  width: 447px;
+
+}
+
+@media screen and (max-width:768px) {
+
+  .sl-h,
+  .slider_content,
+  .content_wrapper {
+    min-height: 450px;
+  }
+}
+
+
+/*******category overlay style******/
+/*******overlay style*******/
+.overlay:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  border-radius: 6px;
+}
+
+/********featured product *******/
+.cart_bag,
+.quick_view {
+  opacity: 0;
+  visibility: visible;
+  transition: all 0.35s;
+}
+
+.prod_card:hover .cart_bag,
+.prod_card:hover .quick_view {
+  opacity: 1;
+  visibility: visible;
+}
+
+.prod_card:hover .quick_view {
+  bottom: 0
+}
+
+
+/**********customer review********/
+.border_shadow {
+  box-shadow: -1px -11px 36px 11px #e7dfdfac;
+}
+
+.arrow_top:before {
+  position: absolute;
+  top: -16px;
+  left: 49%;
+  margin-left: -10px;
+  content: "";
+  display: block;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid white;
+
+}
+
+.slick-dots li button:before {
+  font-size: 11px !important;
+  margin-top: 27px !important
+}
+
+
+/*******featured product slider*********/
+/* .slick-prev,
+.slick-next {
+  top: -11% !important;
+}
+
+.slick-next {
+  right: 3% !important
+}
+
+
+
+.slick-prev {
+  right: 7% !important
+} */
+
+.slick-next:before,
+.slick-prev:before {
+
+  color: #fff !important;
+  font-size: 15px !important;
+  width: 34px;
+  display: block;
+  height: 34px;
+
+  line-height: 37px !important;
+  background-color: #111;
+  border-radius: 50%;
+  font-family: "FontAwesome" !important;
+}
+
+/*********slick slider********/
+.slick-slide>div {
+  padding: 0 13px;
+}
+
+.slick-list {
+  padding: 0 -10px;
+}

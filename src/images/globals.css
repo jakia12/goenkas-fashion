@@ -1,0 +1,199 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  transition: 0.3s;
+}
+
+/******image box*******/
+.w-50.h-50.bg-teal-500.box {
+  width: 326px;
+  height: 227px;
+}
+
+/* Hero banner */
+.heroBanner {
+  background: url(../../public/slider1.jpg) no-repeat center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(29, 41, 62, 0.6);
+}
+
+.find-me {
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  right: 12px;
+  cursor: pointer;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+/* propertiesByCities */
+
+.propertiesByCities > a:hover {
+  background-size: 110% !important;
+}
+
+@media only screen and (min-width: 768px) {
+  /* [over 1200px]*/
+  .propertiesByCities > a:nth-child(1),
+  .propertiesByCities > a:nth-child(4) {
+    width: 32% !important;
+  }
+
+  .propertiesByCities > a:nth-child(2),
+  .propertiesByCities > a:nth-child(3) {
+    width: 65% !important;
+  }
+}
+
+/*********slick slider********/
+.slick-slide > div {
+  padding: 0 15px;
+}
+.slick-list {
+  padding: 0 -10px;
+}
+
+/**********testmonial slider********/
+.border_shadow {
+  box-shadow: -1px -11px 36px 11px #e7dfdfc7;
+}
+.arrow_top:before {
+  position: absolute;
+  top: -16px;
+  left: 49%;
+  margin-left: -10px;
+  content: "";
+  display: block;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid white;
+}
+
+/*********React Select**********/
+
+.css-qbdosj-Input {
+  padding: 12px 10px !important;
+  border-radius: 8px !important;
+}
+
+.css-1jqq78o-placeholder {
+  color: #a8a3af !important;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-left: 10px !important;
+}
+
+.css-1dimb5e-singleValue {
+  padding-left: 8px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.css-b62m3t-container {
+  text-align: left;
+}
+
+.css-13cymwt-control,
+.css-t3ipsp-menu {
+  border-radius: 8px !important;
+  text-align: left;
+  min-height: 23px !important;
+}
+
+.css-hlgwow {
+  padding: 10px 8px !important;
+}
+
+.css-1u9des2-indicatorSeparator {
+  display: none;
+}
+
+/* Range slider */
+.horizontal-slider {
+  width: 100%;
+  max-width: 500px;
+  height: 50px;
+  border: 1px solid grey;
+}
+.vertical-slider {
+  height: 380px;
+  width: 50px;
+  border: 1px solid grey;
+}
+.example-thumb {
+  font-size: 0.9em;
+  text-align: center;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 5px solid gray;
+  box-sizing: border-box;
+}
+.example-thumb.active {
+  background-color: grey;
+}
+.example-track {
+  position: relative;
+  background: #ddd;
+}
+.example-track.example-track-1 {
+  background: #f00;
+}
+.example-track.example-track-2 {
+  background: #0f0;
+}
+.example-mark {
+  width: 8px;
+  height: 8px;
+  border: 2px solid #000;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.horizontal-slider .example-track {
+  top: 20px;
+  height: 10px;
+}
+.horizontal-slider .example-thumb {
+  top: 1px;
+  width: 50px;
+  height: 48px;
+  line-height: 38px;
+}
+.horizontal-slider .example-mark {
+  margin: 0 calc(25px - 6px);
+  bottom: calc(50% - 6px);
+}
+.vertical-slider .example-thumb {
+  left: 1px;
+  width: 48px;
+  line-height: 40px;
+  height: 50px;
+}
+.vertical-slider .example-track {
+  left: 20px;
+  width: 10px;
+}
+.vertical-slider .example-mark {
+  margin: calc(25px - 6px) 0;
+  left: calc(50% - 6px);
+}
