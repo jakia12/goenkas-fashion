@@ -383,6 +383,9 @@ img {
   border-radius: 40px;
 }
 
+.point_r {
+  cursor: pointer !important;
+}
 
 
 /*******responsive design*******/

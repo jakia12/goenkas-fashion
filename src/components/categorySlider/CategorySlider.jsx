@@ -54,14 +54,14 @@ const CategorySlider = () => {
 
         <div className='flex items-center flex-wrap'>
             <div className="w-full sm:w-6/12 md:w-3/12">
-                <div className="m-4 relative overlay rounded  ">
+                <div className="m-4 relative  rounded  ">
                     <Slider {...settings}>
 
 
                         <div className='relative z-10'>
                             <Image src={western} alt="" className="w-full rounded" />
                             <div className="absolute top-24 left-10 cat_content z-10">
-                                <h3 className="text-lg font-medium text-white py-2">
+                                <h3 className="text-lg font-medium text-white bg-[#111] px-4 py-1 rounded-lg mb-2 ">
                                     Western
                                 </h3>
                                 <button className='bg-lightOrange text-white hover:bg-secondCol rounded-md text-sm py-1.5 px-6 border-2 border-lightOrange hover:border-[#fff] hover:text-[#fff] hover:bg-transparent ' type="submit" >
@@ -72,7 +72,7 @@ const CategorySlider = () => {
                         <div className='relative z-10'>
                             <Image src={western} alt="" className="w-full rounded" />
                             <div className="absolute top-24 left-10 cat_content z-10">
-                                <h3 className="text-lg font-medium text-white py-2">
+                                <h3 className="text-lg font-medium text-white bg-[#111] px-4 py-1 rounded-lg mb-2 ">
                                     Western
                                 </h3>
                                 <button className='bg-lightOrange text-white hover:bg-secondCol rounded-md text-sm py-1.5 px-6 border-2 border-lightOrange hover:border-[#fff] hover:text-[#fff] hover:bg-transparent ' type="submit" >
@@ -89,13 +89,13 @@ const CategorySlider = () => {
 
 
             <div className="w-full sm:w-6/12 md:w-3/12">
-                <div className="m-3 relative overlay rounded  ">
+                <div className="m-3 relative  rounded  ">
                     <Slider {...settings}>
 
                         <div className='relative z-10'>
                             <Image src={girlTop} alt="" className="w-full rounded" />
                             <div className="absolute top-24 left-10 cat_content z-10">
-                                <h3 className="text-lg font-medium text-white py-2">
+                                <h3 className="text-lg font-medium text-white bg-[#111] px-4 py-1 rounded-lg mb-2 ">
                                     Girl Top
                                 </h3>
                                 <button className='bg-lightOrange text-white hover:bg-secondCol rounded-md text-sm py-1.5 px-6 border-2 border-lightOrange hover:border-[#fff] hover:text-[#fff] hover:bg-transparent ' type="submit" >
@@ -106,7 +106,7 @@ const CategorySlider = () => {
                         <div className='relative z-10'>
                             <Image src={girlTop} alt="" className="w-full rounded" />
                             <div className="absolute top-24 left-10 cat_content z-10">
-                                <h3 className="text-lg font-medium text-white py-2">
+                                <h3 className="text-lg font-medium text-white bg-[#111] px-4 py-1 rounded-lg mb-2 ">
                                     Girl Top
                                 </h3>
                                 <button className='bg-lightOrange text-white hover:bg-secondCol rounded-md text-sm py-1.5 px-6 border-2 border-lightOrange hover:border-[#fff] hover:text-[#fff] hover:bg-transparent ' type="submit" >
@@ -122,13 +122,13 @@ const CategorySlider = () => {
 
             </div>
             <div className="w-full sm:w-6/12 md:w-3/12">
-                <div className="m-3 relative overlay rounded  ">
+                <div className="m-3 relative  rounded  ">
                     <Slider {...settings}>
 
                         <div className='relative z-10'>
                             <Image src={sleeveImg} alt="" className="w-full rounded" />
                             <div className="absolute top-24 left-10 cat_content z-10">
-                                <h3 className="text-lg font-medium text-white py-2">
+                                <h3 className="text-lg font-medium text-white bg-[#111] px-4 py-1 rounded-lg mb-2 ">
                                     Sleeve Less
                                 </h3>
                                 <button className='bg-lightOrange text-white hover:bg-secondCol rounded-md text-sm py-1.5 px-6 border-2 border-lightOrange hover:border-[#fff] hover:text-[#fff] hover:bg-transparent ' type="submit" >
@@ -139,7 +139,7 @@ const CategorySlider = () => {
                         <div className='relative z-10'>
                             <Image src={sleeveImg} alt="" className="w-full rounded" />
                             <div className="absolute top-24 left-10 cat_content z-10">
-                                <h3 className="text-lg font-medium text-white py-2">
+                                <h3 className="text-lg font-medium text-white bg-[#111] px-4 py-1 rounded-lg mb-2 ">
                                     Sleeve Less
                                 </h3>
                                 <button className='bg-lightOrange text-white hover:bg-secondCol rounded-md text-sm py-1.5 px-6 border-2 border-lightOrange hover:border-[#fff] hover:text-[#fff] hover:bg-transparent ' type="submit" >
@@ -156,13 +156,13 @@ const CategorySlider = () => {
             </div>
 
             <div className="w-full sm:w-6/12 md:w-3/12">
-                <div className="m-3 relative overlay rounded  ">
+                <div className="m-3 relative  rounded  ">
                     <Slider {...settings}>
 
                         <div className='relative z-10'>
                             <Image src={casual} alt="" className="w-full rounded" />
                             <div className="absolute top-24 left-10 cat_content z-10">
-                                <h3 className="text-lg font-medium text-white py-2">
+                                <h3 className="text-lg font-medium text-white bg-[#111] px-4 py-1 rounded-lg mb-2 ">
                                     Casual
                                 </h3>
                                 <button className='bg-lightOrange text-white hover:bg-secondCol rounded-md text-sm py-1.5 px-6 border-2 border-lightOrange hover:border-[#fff] hover:text-[#fff] hover:bg-transparent ' type="submit" >
@@ -173,7 +173,7 @@ const CategorySlider = () => {
                         <div className='relative z-10'>
                             <Image src={casual} alt="" className="w-full rounded" />
                             <div className="absolute top-24 left-10 cat_content z-10">
-                                <h3 className="text-lg font-medium text-white py-2">
+                                <h3 className="text-lg font-medium text-white bg-[#111] px-4 py-1 rounded-lg mb-2 ">
                                     Casual
                                 </h3>
                                 <button className='bg-lightOrange text-white hover:bg-secondCol rounded-md text-sm py-1.5 px-6 border-2 border-lightOrange hover:border-[#fff] hover:text-[#fff] hover:bg-transparent ' type="submit" >
@@ -192,7 +192,7 @@ const CategorySlider = () => {
             {/* third slider */}
             {/* < div className="w-full sm:w-6/12 md:w-3/12" >
                 <Slider {...settings}>
-                    <div className="m-3 relative overlay rounded  ">
+                    <div className="m-3 relative  rounded  ">
                         <Image src={sleeveImg} alt="" className="w-full rounded" />
                         <div className="absolute top-24 left-10 cat_content z-10">
                             <h3 className="text-lg font-medium text-white py-2">
@@ -203,7 +203,7 @@ const CategorySlider = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="m-3 relative overlay rounded  ">
+                    <div className="m-3 relative  rounded  ">
                         <Image src={sleeveImg} alt="" className="w-full rounded" />
                         <div className="absolute top-24 left-10 cat_content z-10">
                             <h3 className="text-lg font-medium text-white py-2">
@@ -220,7 +220,7 @@ const CategorySlider = () => {
             {/* third slider */}
             {/* < div className="w-full sm:w-6/12 md:w-3/12" >
                 <Slider {...settings}>
-                    <div className="m-3 relative overlay rounded  ">
+                    <div className="m-3 relative  rounded  ">
                         <Image src={casual} alt="" className="w-full rounded" />
                         <div className="absolute top-24 left-10 cat_content z-10">
                             <h3 className="text-lg font-medium text-white py-2">
@@ -231,7 +231,7 @@ const CategorySlider = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="m-3 relative overlay rounded  ">
+                    <div className="m-3 relative  rounded  ">
                         <Image src={casual} alt="" className="w-full rounded" />
                         <div className="absolute top-24 left-10 cat_content z-10">
                             <h3 className="text-lg font-medium text-white py-2">

@@ -83,7 +83,7 @@ const MainNav = () => {
 
     return (
 
-        <div className={` flex items-center justify-around pt-4 px-2 md:px-0 md:py-5  w-full top-0  z-[10] py-4 text-[#FFF] ${stickyNav ? 'bg-teal-400 fixed' : 'bg-bgOne'} }`}>
+        <div className={` flex items-center justify-around pt-4 px-2 md:px-0 md:py-5  w-full top-0  z-[10] py-4 text-[#FFF] ${stickyNav ? 'bg-bgOne fixed shadow-md shadow-gray-200' : 'bg-bgOne'} }`}>
             {/* brand logo */}
             <span className="text-2xl">
                 <a href="/"><Image src={brandLogo} /></a>

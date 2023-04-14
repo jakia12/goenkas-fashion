@@ -50,10 +50,10 @@ const BannerSlider = () => {
                             {
                                 ["01", "02", "03"].map((dot, idx) => (
                                     <li key={dot.id}
-                                        className=''
+                                        className='point_r'
                                         onClick={() => setIndex(idx)}
                                     >
-                                        <div className="flex items-center justify-center flex-col">
+                                        <div className="flex items-center justify-center flex-col  point_r">
                                             <div>
                                                 <h3 className={`${idx === index ? "text-2xl font-semibold text-textPrimary" : "text-base font-normal text-gray-400"}`}>{dot}</h3>
                                                 <div className="flex items-center justify-center my-2">
