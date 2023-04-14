@@ -92,7 +92,7 @@ const BannerSlider = () => {
                                         // }}
                                         >
                                             {/* slider content */}
-                                            <div className=" text-left px-5 mb-4 md:mb-0">
+                                            <div className="text-center md:text-left px-5 mb-4 md:mb-0">
                                                 <h1 className='lg:text-5xl text-3xl font-medium text-textPrimary  capitalize  pb-4 ' >{slider.title}</h1>
                                                 <div className=" sl_p">
                                                     <p className="text-textPrimary mb-4">{slider.subTitle}</p>

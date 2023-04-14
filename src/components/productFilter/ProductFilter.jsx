@@ -80,7 +80,7 @@ const ProductFilter = () => {
                         >
 
                             <button
-                                className="text-smbg-white w-[140px] m-2 h-[70px] rounded text-textPrimay hover:text-white   hover:bg-textPrimary flex items-center justify-center shadow-md shadow-gray-200 bg-white"
+                                className={` w-[140px] m-2 h-[70px] rounded text-textPrimay  flex items-center justify-center shadow-md shadow-gray-200  ${cat === catItem ? "text-white   bg-textPrimary" : "text-smbg-white bg-white"}`}
                                 key={cat.id}
                                 value={cat}
                                 onClick={handleProductFilter}
