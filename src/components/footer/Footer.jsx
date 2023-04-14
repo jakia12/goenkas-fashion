@@ -21,7 +21,7 @@ const Footer = () => {
                     <Link href=" " className="link link-hover text-gray-800">ANDAMAN AND NICOBAR ISLAND,</Link>
                 </div>
                 <div>
-                    <span className="footer-title text-xl font-semibold text-[#191919]">AMBOOFLAT JETTY</span>
+                    <span className="footer-title text-xl font-semibold text-[#191919]">BAMBOOFLAT JETTY </span>
                     <Link href=" " className="link link-hover text-gray-800">NEAR BAMBOOFLAT JETTY,</Link>
                     <Link href=" " className="link link-hover text-gray-800">BAMBOOFLAT,</Link>
                     <Link href=" " className="link link-hover text-gray-800">PORT BLAIR, SOUTH ANDAMAN,</Link>
