@@ -30,7 +30,7 @@ export default function Home() {
         <BannerSlider />
         {/* product filtering */}
         <section className="py-10 bg-bgOne">
-          <div className="container mx-auto w-full lg:max-w-6xl">
+          <div className="container mx-auto w-full lg:max-w-6xl px-6">
             <div className="py-5 text-center">
               <h2 className="text-[1.8rem] font-medium text-[#191919] capitalize ">
                 All Categories
