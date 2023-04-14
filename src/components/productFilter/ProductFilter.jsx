@@ -71,7 +71,7 @@ const ProductFilter = () => {
     return (
         <div className='py-8'>
             {/* category button  */}
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center flex-wrap md:flex-nowrap">
                 {
                     categories.map((cat) => (
                         <div
