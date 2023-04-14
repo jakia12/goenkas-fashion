@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { MdLocationOn, MdEmail } from 'react-icons/md';
 import { FaWhatsappSquare } from 'react-icons/fa';
 import SocialIcon from '../shared/socialIcon/SocialIcon';

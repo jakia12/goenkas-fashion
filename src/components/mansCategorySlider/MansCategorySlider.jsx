@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Slider from 'react-slick';
 import casual from '../../images/mansCategory/casual.png';
 import formal from '../../images/mansCategory/formal.png';

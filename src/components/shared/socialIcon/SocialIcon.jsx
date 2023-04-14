@@ -1,27 +1,28 @@
-import React from 'react'
+
 import { FaFacebookF, FaLinkedinIn, FaTwitter, FaPinterest } from 'react-icons/fa';
 
 import { AiFillInstagram } from 'react-icons/ai';
+import Link from 'next/link';
 
 const SocialIcon = () => {
     return (
-        <div className='flex items-center gap-2'>
+        <div className='flex items-center gap-3 '>
             <div className="w-7 h-7 rounded-full bg-white hover:bg-lightOrange text-textPrimary hover:text-white flex items-center justify-center">
 
-                <span className='text-sm '><FaFacebookF /></span>
+                <Link href={''} className='text-sm '><FaFacebookF /></Link>
             </div>
             <div className="w-7 h-7 rounded-full bg-white hover:bg-lightOrange text-textPrimary hover:text-white flex items-center justify-center">
 
-                <span className='text-sm '><FaLinkedinIn /></span>
+                <Link href={''} className='text-sm '><FaLinkedinIn /></Link>
             </div>
             <div className="w-7 h-7 rounded-full bg-white hover:bg-lightOrange text-textPrimary hover:text-white flex items-center justify-center">
 
-                <span className='text-sm '><FaTwitter /></span>
+                <Link href={''} className='text-sm '><FaTwitter /></Link>
             </div>
 
             <div className="w-7 h-7 rounded-full bg-white hover:bg-lightOrange text-textPrimary hover:text-white flex items-center justify-center">
 
-                <span className='text-sm '><AiFillInstagram /></span>
+                <Link href={''} className='text-sm '><AiFillInstagram /></Link>
             </div>
 
 

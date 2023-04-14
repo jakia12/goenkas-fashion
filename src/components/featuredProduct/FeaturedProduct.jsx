@@ -1,6 +1,6 @@
 import { featuredCategories } from '@/DATA/Placeholder'
 import Image from 'next/image'
-import React from 'react'
+
 import { RiShoppingBagLine } from 'react-icons/ri';
 import Slider from 'react-slick';
 

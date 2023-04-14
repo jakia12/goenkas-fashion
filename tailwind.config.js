@@ -35,10 +35,11 @@ module.exports = {
     ,
 
     colors: {
-      textPrimary: "#191919",
+      textPrimary: "#393D46",
       lightOrange: "#E64E08",
       lightRed: "#F3A110",
-      darkSlate: "#212529"
+      darkSlate: "#212529",
+      bgOne: "#F6F7FB"
 
 
     },

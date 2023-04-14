@@ -305,6 +305,86 @@ button.close_btn {
   visibility: hidden;
 }
 
+
+/*******product filtering ********/
+.overlay_gallery {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+
+
+}
+
+.gallery_card:hover .overlay_gallery {
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+}
+
+/************masonry gallery***********/
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* Main CSS */
+.grid-wrapper>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-wrapper>div>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+}
+
+.grid-wrapper .wide {
+  grid-column: span 2;
+}
+
+.grid-wrapper .tall {
+  grid-row: span 2;
+}
+
+.grid-wrapper .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.grid-wrapper .sm_big {
+  grid-column: span 2;
+}
+
+/*******slider design********/
+.slideShow_slider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+
+.slide {
+  display: inline-block;
+
+  height: 450px;
+  width: 100%;
+  border-radius: 40px;
+}
+
+
+
 /*******responsive design*******/
 
 @media screen and (max-width:900px) {
@@ -331,6 +411,13 @@ button.close_btn {
   .slick-prev:before {
 
     display: none;
+  }
+
+  /*****slider***/
+  .sl_p {
+    word-break: break-all;
+    white-space: normal;
+    min-width: 204px;
   }
 }
 

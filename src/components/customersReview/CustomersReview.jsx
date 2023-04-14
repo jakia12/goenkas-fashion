@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Slider from 'react-slick';
 import cust1 from '../../images/client-image/cust1.png';
 import cust2 from '../../images/client-image/cust2.png';

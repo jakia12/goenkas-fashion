@@ -9,6 +9,8 @@ import MansCategorySlider from '@/components/mansCategorySlider/MansCategorySlid
 import BrandLogo from '@/components/brandLogo/BrandLogo'
 import Head from 'next/head'
 import AwardSlider from '@/components/awardSlider/AwardSlider'
+import ProductFilter from '@/components/productFilter/ProductFilter'
+import ProductGallery from '@/components/productGallery/ProductGallery'
 
 
 
@@ -24,23 +26,34 @@ export default function Home() {
       </Head>
       <Layout>
         {/* banner slider */}
+
         <BannerSlider />
-        {/* category section */}
-        <section className="py-10">
-          <div className="container mx-auto w-full lg:max-w-6xl px-4 md:px-0">
-            {/* section title */}
+        {/* product filtering */}
+        <section className="py-10 bg-bgOne">
+          <div className="container mx-auto w-full lg:max-w-6xl">
             <div className="py-5 text-center">
               <h2 className="text-[1.8rem] font-medium text-[#191919] capitalize ">
-                Ladies Product Category
+                All Categories
               </h2>
               <div className="h-[3px] w-[80px] bg-lightOrange mx-auto mt-2 mb-3"></div>
               <p className="my-3 text-base text-gray-600">Find best quality products at Goenkas Fashion Stores</p>
             </div>
-            <CategorySlider />
-
+            <ProductFilter />
           </div>
         </section>
-
+        {/* product gallery */}
+        <section className="py-10">
+          <div className="container mx-auto w-full lg:max-w-6xl px-4 md:px-0">
+            <div className="py-5 text-center">
+              <h2 className="text-[1.8rem] font-medium text-[#191919] capitalize ">
+                Top Rated Products
+              </h2>
+              <div className="h-[3px] w-[80px] bg-lightOrange mx-auto mt-2 mb-3"></div>
+              <p className="my-3 text-base text-gray-600">Find best quality products at Goenkas Fashion Stores</p>
+            </div>
+            <ProductGallery />
+          </div>
+        </section>
         {/* featured product  */}
         <section className="py-10 bg-[#f7f7f7]">
           <div className="container mx-auto w-full lg:max-w-6xl px-4 md:px-0" >
@@ -62,6 +75,22 @@ export default function Home() {
 
 
         </section>
+        {/* category section */}
+        <section className="py-10">
+          <div className="container mx-auto w-full lg:max-w-6xl px-4 md:px-0">
+            {/* section title */}
+            <div className="py-5 text-center">
+              <h2 className="text-[1.8rem] font-medium text-[#191919] capitalize ">
+                Ladies Product Category
+              </h2>
+              <div className="h-[3px] w-[80px] bg-lightOrange mx-auto mt-2 mb-3"></div>
+              <p className="my-3 text-base text-gray-600">Find best quality products at Goenkas Fashion Stores</p>
+            </div>
+            <CategorySlider />
+
+          </div>
+        </section>
+
 
         {/* mans category */}
         <section className="py-10">
@@ -106,7 +135,12 @@ export default function Home() {
         </section>
 
         {/* award prize section */}
-        <AwardSlider />
+        <section className="py-10 bg-bgOne">
+          <div className="container mx-auto w-full md:max-w-6xl px-4 md:px-0">
+            <AwardSlider />
+          </div>
+        </section>
+
 
       </Layout >
     </>

@@ -1,88 +1,124 @@
-import { bannerSliders } from '@/DATA/Placeholder';
-import React from 'react'
+import { bannerSliders, dots } from '@/DATA/Placeholder';
+
 import Slider from 'react-slick';
 import slider1 from '../../images/slider1.jpg';
+import Image from 'next/image';
+import { useEffect, useRef, useState } from 'react';
+import SliderIcon from '../sliderIcon/SliderIcon';
 
 const BannerSlider = () => {
 
+    const [index, setIndex] = useState(0);
+    const timeoutRef = useRef(null);
+    const delay = 2000;
+
+    //show autoplay
+    // function resetTimeout() {
+    //     if (timeoutRef.current) {
+    //         clearTimeout(timeoutRef.current);
+    //     }
+    // }
+
+    // useEffect(() => {
+    //     resetTimeout();
+    //     timeoutRef.current = setTimeout(
+    //         () =>
+    //             setIndex((prevIndex) =>
+    //                 prevIndex === bannerSliders.length - 1 ? 0 : prevIndex + 1
+    //             ),
+    //         delay
+    //     );
+
+    //     return () => {
+    //         resetTimeout();
+    //     };
+    // }, [index]);
 
 
-    var settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
+    //custom number dots
 
-        slidesToScroll: 1,
-        autoplay: true,
-        arrows: false,
-        autoplaySpeed: 2500,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true,
-                },
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    initialSlide: 2,
-                },
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                },
-            },
-        ],
-        // fade: true,
-    };
+
+
 
     return (
-        <div>
-            <Slider {...settings}>
+        <section className='bg-bgOne'>
+            <div className="flex justify-center">
+                <div className="w-2/12 md:w-1/12 ">
+                    <div className="flex items-center flex-col gap-y-10 justify-center">
+                        {/* slider dot number */}
+                        <ul className='mt-12'>
+                            {
+                                ["01", "02", "03"].map((dot, idx) => (
+                                    <li key={dot.id}
+                                        className=''
+                                        onClick={() => setIndex(idx)}
+                                    >
+                                        <div className="flex items-center justify-center flex-col">
+                                            <div>
+                                                <h3 className={`${idx === index ? "text-2xl font-semibold text-textPrimary" : "text-base font-normal text-gray-400"}`}>{dot}</h3>
+                                                <div className="flex items-center justify-center my-2">
+                                                    <div className="w">
+                                                        <div className={`w-[1px] h-9  ${idx === index ? "bg-textPrimary" : "bg-gray-400"}`}></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                ))
+                            }
 
-                {
-                    bannerSliders.map((slider) => (
-                        <div className='slider_wrapper' >
+                        </ul>
 
-                            <div className="slider_content sl-h" style={{
-                                background: `linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(${slider.backImg.src})`,
-                                backgroundPosition: 'center center',
-                                backgroundSize: 'cover',
-                                backgroundRepeat: 'no-repeat'
-                            }}>
-                                <div className="content_wraper text-center px-5">
-                                    <div className="flex justify-center">
-                                        <h1 className='lg:text-5xl text-3xl font-medium text-white  uppercase  pb-4 ' >{slider.title}</h1>
+                        {/* slider icon */}
+                        <SliderIcon />
+                    </div>
+                </div>
+                <div className="w-10/12">
+                    <div className='mx-auto  overflow-hidden bg-white'>
+
+                        <div className="slideShow_slider  "
+                            style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+                        >
+                            {
+                                bannerSliders.map((slider) => (
+                                    <div className=' py-10 slide flex items-center justify-center flex-nowrap' >
+
+                                        <div className="md:flex items-center justify-center flex-wrap md:flex-nowrap"
+                                        //  style={{
+                                        //     background: `linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(${slider.backImg.src})`,
+                                        //     backgroundPosition: 'center center',
+                                        //     backgroundSize: 'cover',
+                                        //     backgroundRepeat: 'no-repeat'
+                                        // }}
+                                        >
+                                            {/* slider content */}
+                                            <div className=" text-left px-5 mb-4 md:mb-0">
+                                                <h1 className='lg:text-5xl text-3xl font-medium text-textPrimary  capitalize  pb-4 ' >{slider.title}</h1>
+                                                <div className=" sl_p">
+                                                    <p className="text-textPrimary mb-4">{slider.subTitle}</p>
+                                                </div>
+
+                                                <button className=" text-textPrimary py-1.5 px-7  hover: rounded text-base  bg-white   border-2 border-textPrimary hover:text-[#fff] hover:bg-textPrimary " >
+                                                    Shop Now
+                                                </button>
+                                            </div>
+
+                                            {/* slider image */}
+                                            <Image src={slider.img} alt="" />
+
+                                        </div>
                                     </div>
-                                    <div className="flex justify-center">
-                                        <p className="text-white lg:max-w-3xl max-w-xl text-center">{slider.subTitle}</p>
-                                    </div>
-
-                                    <div className="pt-6 flex items-center justify-center gap-4">
-                                        <span className="text-white py-1.5 px-6 border-2 border-[#111] rounded bg-[#111]">${slider.startPrice}</span>
-                                        <button className=" text-white py-1.5 px-6  hover: rounded text-base  bg-lightOrange hover:bg-secondCol border-2 border-lightOrange hover:border-[#fff] hover:text-[#fff] hover:bg-transparent " >
-                                            Shop Now
-                                        </button>
-
-                                    </div>
-                                </div>
-                            </div>
+                                ))
+                            }
                         </div>
-                    ))
-                }
-            </Slider>
+                    </div>
+                </div>
+                <div className="w-none md:w-1/12"></div>
+            </div>
 
-        </div>
+
+
+        </section>
 
     )
 }

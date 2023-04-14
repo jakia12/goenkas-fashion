@@ -1,7 +1,7 @@
-import slider1 from '../images/sliderImg/s1.jpg';
-import slider2 from '../images/sliderImg/s2.jpg';
-import slider3 from '../images/sliderImg/s3.jpg';
-
+// slider image
+import slb1 from '../images/sliderImg/sl1.png';
+import slb2 from '../images/sliderImg/sl2.png';
+import slb3 from '../images/sliderImg/sl3.png'
 // category slider image
 import western from '../images/western.png';
 import skirt from '../images/skirt.png';
@@ -21,30 +21,28 @@ import blouse from '../images/featured-products/pr6.png';
 import silkyTop from '../images/featured-products/pr7.png';
 
 
-//garment award image
-import award1 from '../images/award/aw1.png';
-import award2 from '../images/award/aw2.png';
+
 
 export const bannerSliders = [
     {
         id: 1,
-        backImg: slider1,
-        title: "Find the boundaries",
-        subTitle: "Summer Sale 70% off",
-        startPrice: 199
+        img: slb1,
+        title: "Girl's Collections",
+        subTitle: "New girls collectio is here.Plz check out our new girls collection",
+
     },
     {
         id: 2,
-        backImg: slider2,
-        title: "Over 200 product on discount",
-        subTitle: "Great Deals",
+        img: slb2,
+        title: "Women's Collections",
+        subTitle: "New Man's collectio is here.Plz check out our new Man's collection",
         startPrice: 200
     },
     {
         id: 3,
-        backImg: slider3,
-        title: "Upto 70% off",
-        subTitle: "New Arrivals",
+        img: slb3,
+        title: "Man's Collection",
+        subTitle: "New kid's collectio is here.Plz check out our new kid's collection",
         startPrice: 299
     },
 
@@ -161,20 +159,6 @@ export const featuredCategories = [
 
 ]
 
-//awardSlider js
 
-export const awardSliders = [
-    {
-        id: 1,
-        title: "14 Garment Fair",
-        subTitle: "2022-2023",
-        awardImg: award1
-    },
-    {
-        id: 2,
-        title: " Garment Fair",
-        subTitle: "2022-2023",
-        awardImg: award2
-    },
 
-]
+

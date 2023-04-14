@@ -1,6 +1,6 @@
 import { categorySliders } from '@/DATA/Placeholder';
 import Image from 'next/image';
-import React from 'react'
+
 import Slider from 'react-slick';
 //western cat image
 
