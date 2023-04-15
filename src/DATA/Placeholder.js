@@ -161,4 +161,37 @@ export const featuredCategories = [
 
 
 
+//single product slider
+
+import Sing1 from '../images/categorySlider/mens/formal/form1.png';
+import Sing2 from '../images/categorySlider/mens/formal/form2.png';
+import Sing3 from '../images/categorySlider/mens/partywear/party1.png';
+
+export const singleSliders = [
+    { id: 1, img: Sing1 },
+    { id: 2, img: Sing2 },
+    { id: 3, img: Sing3 }
+]
+
+
+//single product slider thumbnaill
+
+export const sliderThumbs = [
+    { id: 1, thumb: Sing1 },
+    { id: 2, thumb: Sing2 },
+    { id: 3, thumb: Sing3 },
+]
+
+//colors dot slider
+
+export const colorDots = [
+    { id: 1, color: "#8CA4E3" },
+    { id: 2, color: "#181F2C" },
+    { id: 3, color: "#B4B6C1" },
+]
+
+
+
+
+
 

@@ -81,7 +81,7 @@ const BannerSlider = () => {
                         >
                             {
                                 bannerSliders.map((slider) => (
-                                    <div className=' py-10 slide flex items-center justify-center flex-nowrap' >
+                                    <div className=' slide flex items-center justify-center flex-nowrap' >
 
                                         <div className="md:flex items-center justify-center flex-wrap md:flex-nowrap"
                                         //  style={{

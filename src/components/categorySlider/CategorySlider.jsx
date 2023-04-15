@@ -60,25 +60,11 @@ const CategorySlider = () => {
 
                         <div className='relative z-10'>
                             <Image src={western} alt="" className="w-full rounded" />
-                            <div className="absolute top-24 left-10 cat_content z-10">
-                                <h3 className="text-lg font-medium text-white bg-[#111] px-4 py-1 rounded-lg mb-2 ">
-                                    Western
-                                </h3>
-                                <button className='bg-lightOrange text-white hover:bg-secondCol rounded-md text-sm py-1.5 px-6 border-2 border-lightOrange hover:border-[#fff] hover:text-[#fff] hover:bg-transparent ' type="submit" >
-                                    Buy Now
-                                </button>
-                            </div>
+
                         </div>
                         <div className='relative z-10'>
                             <Image src={western} alt="" className="w-full rounded" />
-                            <div className="absolute top-24 left-10 cat_content z-10">
-                                <h3 className="text-lg font-medium text-white bg-[#111] px-4 py-1 rounded-lg mb-2 ">
-                                    Western
-                                </h3>
-                                <button className='bg-lightOrange text-white hover:bg-secondCol rounded-md text-sm py-1.5 px-6 border-2 border-lightOrange hover:border-[#fff] hover:text-[#fff] hover:bg-transparent ' type="submit" >
-                                    Buy Now
-                                </button>
-                            </div>
+
                         </div>
 
                     </Slider >
@@ -94,25 +80,11 @@ const CategorySlider = () => {
 
                         <div className='relative z-10'>
                             <Image src={girlTop} alt="" className="w-full rounded" />
-                            <div className="absolute top-24 left-10 cat_content z-10">
-                                <h3 className="text-lg font-medium text-white bg-[#111] px-4 py-1 rounded-lg mb-2 ">
-                                    Girl Top
-                                </h3>
-                                <button className='bg-lightOrange text-white hover:bg-secondCol rounded-md text-sm py-1.5 px-6 border-2 border-lightOrange hover:border-[#fff] hover:text-[#fff] hover:bg-transparent ' type="submit" >
-                                    Buy Now
-                                </button>
-                            </div>
+
                         </div>
                         <div className='relative z-10'>
                             <Image src={girlTop} alt="" className="w-full rounded" />
-                            <div className="absolute top-24 left-10 cat_content z-10">
-                                <h3 className="text-lg font-medium text-white bg-[#111] px-4 py-1 rounded-lg mb-2 ">
-                                    Girl Top
-                                </h3>
-                                <button className='bg-lightOrange text-white hover:bg-secondCol rounded-md text-sm py-1.5 px-6 border-2 border-lightOrange hover:border-[#fff] hover:text-[#fff] hover:bg-transparent ' type="submit" >
-                                    Buy Now
-                                </button>
-                            </div>
+
                         </div>
 
 
@@ -127,25 +99,11 @@ const CategorySlider = () => {
 
                         <div className='relative z-10'>
                             <Image src={sleeveImg} alt="" className="w-full rounded" />
-                            <div className="absolute top-24 left-10 cat_content z-10">
-                                <h3 className="text-lg font-medium text-white bg-[#111] px-4 py-1 rounded-lg mb-2 ">
-                                    Sleeve Less
-                                </h3>
-                                <button className='bg-lightOrange text-white hover:bg-secondCol rounded-md text-sm py-1.5 px-6 border-2 border-lightOrange hover:border-[#fff] hover:text-[#fff] hover:bg-transparent ' type="submit" >
-                                    Buy Now
-                                </button>
-                            </div>
+
                         </div>
                         <div className='relative z-10'>
                             <Image src={sleeveImg} alt="" className="w-full rounded" />
-                            <div className="absolute top-24 left-10 cat_content z-10">
-                                <h3 className="text-lg font-medium text-white bg-[#111] px-4 py-1 rounded-lg mb-2 ">
-                                    Sleeve Less
-                                </h3>
-                                <button className='bg-lightOrange text-white hover:bg-secondCol rounded-md text-sm py-1.5 px-6 border-2 border-lightOrange hover:border-[#fff] hover:text-[#fff] hover:bg-transparent ' type="submit" >
-                                    Buy Now
-                                </button>
-                            </div>
+
                         </div>
 
 
@@ -161,25 +119,11 @@ const CategorySlider = () => {
 
                         <div className='relative z-10'>
                             <Image src={casual} alt="" className="w-full rounded" />
-                            <div className="absolute top-24 left-10 cat_content z-10">
-                                <h3 className="text-lg font-medium text-white bg-[#111] px-4 py-1 rounded-lg mb-2 ">
-                                    Casual
-                                </h3>
-                                <button className='bg-lightOrange text-white hover:bg-secondCol rounded-md text-sm py-1.5 px-6 border-2 border-lightOrange hover:border-[#fff] hover:text-[#fff] hover:bg-transparent ' type="submit" >
-                                    Buy Now
-                                </button>
-                            </div>
+
                         </div>
                         <div className='relative z-10'>
                             <Image src={casual} alt="" className="w-full rounded" />
-                            <div className="absolute top-24 left-10 cat_content z-10">
-                                <h3 className="text-lg font-medium text-white bg-[#111] px-4 py-1 rounded-lg mb-2 ">
-                                    Casual
-                                </h3>
-                                <button className='bg-lightOrange text-white hover:bg-secondCol rounded-md text-sm py-1.5 px-6 border-2 border-lightOrange hover:border-[#fff] hover:text-[#fff] hover:bg-transparent ' type="submit" >
-                                    Buy Now
-                                </button>
-                            </div>
+
                         </div>
 
 

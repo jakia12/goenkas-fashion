@@ -383,6 +383,13 @@ img {
   border-radius: 40px;
 }
 
+.slide_single {
+  display: inline-block;
+
+  width: 100%;
+  border-radius: 40px;
+}
+
 .point_r {
   cursor: pointer !important;
 }
